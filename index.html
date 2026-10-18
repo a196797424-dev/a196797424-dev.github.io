@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wuthering YouTube Analytics：供频道管理者使用的本地只读数据分析工具。了解工具用途、授权范围与隐私政策。">
+  <title>Wuthering YouTube Analytics</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:#18352d;background:#f3f6f2}*{box-sizing:border-box}body{margin:0}main{max-width:860px;margin:0 auto;padding:64px 24px}header{border-top:5px solid #26735b;padding-top:30px;margin-bottom:36px}.eyebrow{font-size:14px;letter-spacing:.08em;color:#52695f}h1{font-size:clamp(30px,5vw,46px);line-height:1.2;overflow-wrap:anywhere;margin:14px 0 20px}h2{font-size:22px;margin:0 0 12px}p,li{line-height:1.85}p{margin:10px 0}section{background:#fff;border:1px solid #dae5dc;border-radius:12px;padding:26px;margin:18px 0}a{color:#17654b;text-underline-offset:4px}a:focus-visible{outline:3px solid #ba7a22;outline-offset:4px}ul{padding-left:24px}.intro{font-size:19px;color:#40574e}.links{display:flex;gap:24px;flex-wrap:wrap;margin-top:24px}footer{font-size:14px;color:#52695f;margin-top:32px}code{overflow-wrap:anywhere}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">频道管理者的只读分析工具</div>
+    <h1>Wuthering YouTube Analytics</h1>
+    <p class="intro">在频道管理者授权后，通过 YouTube 官方 API 获取频道与视频表现，用于查看数据、比较内容表现和制作分析报告。</p>
+    <nav class="links" aria-label="网站导航"><a href="privacy.html">隐私政策 / Privacy Policy</a><a href="mailto:a196797424@gmail.com">联系维护者</a></nav>
+  </header>
+  <section>
+    <h2>这个工具做什么</h2>
+    <p>这是由 GitHub 用户 <strong>a196797424-dev</strong> 维护、供本人及获授权频道管理者使用的本地桌面工具。工具读取频道身份、视频资料、观看次数、观看时长、平均观看比例和订阅变化，辅助频道管理者理解内容表现。分析报告可由 OpenAI Codex 协助生成。</p>
+    <p>此网站提供应用说明与隐私政策。实际数据读取在管理者的电脑上运行，网站没有登录入口，也不展示频道后台数据。</p>
+  </section>
+  <section>
+    <h2>为什么需要 Google 授权</h2>
+    <ul>
+      <li><code>youtube.readonly</code>：识别授权频道，并读取频道及视频信息，包括账号有权访问的非公开视频资料。</li>
+      <li><code>yt-analytics.readonly</code>：读取授权频道的非收益分析报表，用于表现分析。</li>
+    </ul>
+    <p>授权由 Google 的登录与同意页面完成。工具不会索取 Google 密码；当前权限不允许上传、编辑或删除视频，也不允许发表评论。</p>
+  </section>
+  <section>
+    <h2>数据由谁使用</h2>
+    <p>数据用于授权管理者提出的频道分析任务。本地程序保存凭据与报表；使用 Codex 协助分析时，任务所需的频道数据可能发送至 OpenAI 处理。具体存储、共享、撤销与删除方式见<a href="privacy.html">隐私政策</a>。</p>
+    <p>本工具由个人独立维护，不代表 Google 或 YouTube，也未声称获得其认证或背书。</p>
+  </section>
+  <footer>维护与隐私联系：<a href="mailto:a196797424@gmail.com">a196797424@gmail.com</a><br>最后更新：2026-10-19</footer>
+</main>
+</body>
+</html>
